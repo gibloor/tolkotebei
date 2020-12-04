@@ -13,9 +13,14 @@
 .sliderVideos .slick-dots li button:before{
     color:blue;
 }
+.sliderVideos .textAboutVideo{
+    width:300px;
+}
 .videoAtSlider{
-    width:100%;
+    width:300px;
+
 }
 .videoAtSlider video{
     width:100%;
+
 }

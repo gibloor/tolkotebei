@@ -26,14 +26,14 @@ const SliderOne = () => {
     arrows: false,
   };
   return (
-      <Slider {...settings}>
-        {menu.map(item => (
-          <div>
-            <div className="videoAtSlider"><video controls="controls" src={item.video}></video></div>
-            <div className="textAboutVideo">{item.title}</div>
-          </div>
-        ))}
-      </Slider>
+    <Slider {...settings}>
+    {menu.map(item => (
+      <div>
+        <div className="videoAtSlider"><video controls="controls" src={item.video}></video></div>
+        <div className="textAboutVideo">{item.title}</div>
+      </div>
+    ))}
+  </Slider>
   );
 };
 
