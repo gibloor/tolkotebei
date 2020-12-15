@@ -1,4 +1,4 @@
-.mainSliderOne .slick-slide{
+.mainSliderOne .slick-slide {
     width:100%;
     height: calc(100vh - 45px);
     overflow: hidden;
@@ -8,16 +8,16 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.mainSliderOne .slick-slide img{
+.mainSliderOne .slick-slide img {
     width:100%;
 
 }
-.mainSliderOne .slick-dots{
+.mainSliderOne .slick-dots {
     bottom: 50px;
     z-index:999999;
     color:blue;
 }
 .mainSliderOne .slick-dots li.slick-active button:before,
-.mainSliderOne .slick-dots li button:before{
+.mainSliderOne .slick-dots li button:before {
     color:blue;
 }

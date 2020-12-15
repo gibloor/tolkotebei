@@ -4,82 +4,69 @@ import siteLogo from './img/Sitelogo.jpg';
 import SliderOne from './components/SliderOne/SliderOne.js';
 import SliderTwo from './components/SliderTwo/SliderTwo.js';
 import SliderVideos from './components/SliderVideos/SliderVideos.js';
-import HeaderMenu from './components/HeaderMenu/HeaderMenu.js';
+import HeaderMenu from './components/HeaderMenu/HeaderMenu'
 
 class App extends React.Component {
-    constructor(props) {
+  constructor(props) {
     super(props);
-
     this.state = {
       isHovered: false,
       isClicked: false,
     };
   }
-  handleEnter = () => {
+
+  handleEnter() {
     this.setState({
       isHovered: true
     });
   }
-  handleLeave = () => {
+
+  handleLeave() {
     this.setState({
       isHovered: false
     });
   }
+
   handleClick = () => {
+ 
     this.setState({
       isClicked: !this.state.isClicked,
     });
   }
- 
+
   render() {
+    console.log(12321, this.state.isClicked)
+
     return (
       <div  className="allDiv" >
-        {this.state.isClicked ? (
+        {this.state.isClicked && (
           <div className="blue">
             <p>ada</p><p>adad</p>
           </div>
-        ):(
-          <div/>
-          )
-        }
+        )}
           <div className="siteHead">
             <div className="headText">
               <div
-                onMouseEnter={this.handleEnter}
-                onMouseLeave={this.handleLeave}
+                onMouseEnter={this.handleEnter.bind(this)}
+                onMouseLeave={this.handleLeave.bind(this)}
                 className="langChange">
                 <div>
                   RU↓
                 </div>
-                {this.state.isHovered ?(
+                {this.state.isHovered && (
                   <nav className="listLang">
-                  <ul>
+                    <ul>
                       <li><a href="">RU</a></li>
                       <li><a href="">BY</a></li>
                       <li><a href="">EN</a></li>
-                    </ul>
+                    </ul>q
                   </nav>
-                  ):
-                  (
-                    <div/>
-                  )
-                }
+                )}
               </div> 
               <HeaderMenu/>
-              <nav className="navHead">
-                <ul onClick={this.handleClick}>
-                  <li>Специальности</li>
-                  <li>Студентам</li>
-                  <li>Сотрудникам</li>
-                  <li>Выпускникам</li>
-                  <li>Партнёрам</li>
-                  <li>Креативное образование</li>
-                  <li>Одно окно</li>
-                  <li>📞</li>
-                </ul>
-              </nav>
             </div>
           </div>
+
           <div className="mainAreaOne">
             <div className="mainString">
               <div className="mainStringCenter">
@@ -88,13 +75,13 @@ class App extends React.Component {
                 </div>
                 <div className="mainMenu">
                   <ul>
-                    <li><a href="">Лицей</a></li>
-                    <li><a href="">Событие</a></li>
-                    <li><a href="">Абитуриентам</a></li>
-                    <li><a href="">Образование</a></li>
-                    <li><a href="">Наука</a></li>
-                    <li><a href="">Международные связи</a></li>
-                    <li><a href="">🔎</a></li>
+                    <li>Лицей</li>
+                    <li>Событие</li>
+                    <li>Абитуриентам</li>
+                    <li>Образование</li>
+                    <li>Наука</li>
+                    <li>Международные cвязи</li>
+                    <li>🔎</li>
                   </ul>
                 </div>  
               </div>

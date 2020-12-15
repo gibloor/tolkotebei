@@ -1,37 +1,41 @@
 a{
   text-decoration: none;
 }
-.allDiv{
+.allDiv {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width:100%;
   flex-direction: column;
 }
-.siteHead{
+.siteHead {
   background-color:#0a3470;
   width:100%;
   display:flex;
   align-items: center;
   justify-content: center;
   height:45px;
+  position: relative;
+
 }
-.headText{
+.headText {
   width:1350px;
   color: #fff;
   font-size: 16px;
   line-height: 1.5;
 }
-.langChange{
+.langChange {
   z-index:9999;
   cursor: pointer;
   vertical-align: middle;
   position: absolute;
   padding:10px;
 }
-.listLang{
+.listLang {
   position: absolute;
   float:left;
 }
-.listLang ul{
+.listLang ul {
   list-style: none;
   margin:0;
   padding:0;
@@ -39,63 +43,18 @@ a{
   background-color: orange;
   border-radius: 5%;
 }
-.listLang li{
+.listLang li {
   display: inline-block;
   height:100%;
   padding:10px;
 }
-.navHead {
-  float: right; 
-  margin-right:5px;
-}
-.navHead ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width:100%;
-}
-.navHead li {
-  display: inline-block;
-  padding-right: 15px;
-  padding-left: 15px;
-  cursor: pointer;
-  padding: 10px;
-  position: relative;
-}
-.navHead a{
-  color:#fff;
-}
-.navHead a:hover{
-  color: red;
-  transition: all 1s;
-}
-.navHead li:hover{
-  color: red;
-  transition: all 1s;
-}
-.navHead li:after {
-  position: absolute;
-  margin-left:50%;
-  content: "";
-  width: 0;
-  height: 3.5px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #b00000;
-  transition: all 1s;
-}
-.navHead li:hover:after {
-  width: 100%;
-  margin-left:0px;
-}
-.menuLogo{
+.menuLogo {
 height: 100px;
 }
-.mainAreaOne{
+.mainAreaOne {
   width: 100%;
 }
-.mainString{
+.mainString {
   font-size: 16px;
   font-weight: bold;
   position: absolute;
@@ -104,7 +63,7 @@ height: 100px;
   justify-content: center;
   z-index:999;
 }
-.mainStringCenter{
+.mainStringCenter {
   width:1350px;
 }
 .mainString ul {
@@ -125,31 +84,31 @@ height: 100px;
 .mainMenu {
   float:right;
 }
-.mainMenu a{
+.mainMenu a {
   color:#fff;
   list-style: none;
 }
-.blockLogo{
+.blockLogo {
   float:left;
 }
-.newsBlock{
+.newsBlock {
   width:100%;
   display:flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.newsBlockMini{
+.newsBlockMini {
   width:100%;
   max-width:1350px;
 }
-.newsTitle{
+.newsTitle {
   font-size:30pt;
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
 }
-.newsTitleList{
+.newsTitleList {
   display:flex;
   justify-content: center;
   align-items: center;
@@ -163,34 +122,34 @@ height: 100px;
   position: relative;
   
 }
-.newsTitleList a{
+.newsTitleList a {
   color:blue;
   font-weight: bold;
 }
-.newsMainBlock{
+.newsMainBlock {
   width:100%;
   display:flex;
 }
-.newsMainBlockLeft{
+.newsMainBlockLeft {
   max-width: calc(100% - 300px);
   width:100%;
 }
-.newsMainBlockRight{
+.newsMainBlockRight {
   width: 300px;
 }
-.newsEventsList{
+.newsEventsList {
 width:100%;
 height:400px;
 display:flex;
 align-items: center;
 justify-content: space-around;
 }
-.newsEvents{
+.newsEvents {
 width:30%;
 height:90%;
 
 }
-.newsEventsImg{
+.newsEventsImg {
   width:100%;
   height:250px;
   background-position: top center;
@@ -198,23 +157,20 @@ height:90%;
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
-.newsEventsText{
+.newsEventsText {
   width:100%;
   height:150px;
   text-align: center;
 }
-.newsMainBlockRight{
+.newsMainBlockRight {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.newsPillar{
+.newsPillar {
   width: 90%;
   height: 120px;
-}
-.sectionsVideo{
-  min-width: 250px;
 }
 .sectionsVideo ul {
   margin: 0;
@@ -227,20 +183,11 @@ height:90%;
   padding: 10px;
   position: relative;
 }
-.blockVideoBoss{
-  width:100%;
-  overflow: hidden;
-  min-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.blockVideo{
+.blockVideo {
   display:flex;
   width:1350px;
-  justify-content: space-around;
 }
-.verticalText{
+.verticalText {
 width:80px;
 display: flex;
 align-items: center;
@@ -250,24 +197,20 @@ font-weight: bold;
 writing-mode: tb-rl;
 transform:rotate(180deg);
 }
-.sliderVideos{
-  max-width:930px;
+.sectionsVideos {
+width:265px;
+}
+.sliderVideos {
+width: calc(100% - 345px);
 }
 
-
-.blue{
-  padding:0px;
-  margin-top:45px;
+.blue {
   position: absolute;
   width: 100%;
+  height: 500px;
   background-color: #0a3470;
-  color:#fff;
-  z-index:9999999;
-}
-
-
-@media screen and (max-width: 1350px){
-  .blockVideoBoss{
-    display: block;
-  }
+  z-index: 99999999;
+  left: 0;
+  top: 0;
+  margin-top: 45px;
 }
