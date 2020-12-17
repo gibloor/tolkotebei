@@ -5,15 +5,19 @@ function MenuDrop(props) {
   const { data } = props
 
   return (
-    <ul className="menu-list-drop">
+    <div className="menu-list-drop">
       {
-        data.map((item, index) => (
-          <li key={index}>
-            {item.title}
-          </li>
+        data.map((item) => (
+          <ul>
+          {item.map((items, index) => (
+            <li key={index}>
+              {items.title}
+            </li>
+          ))}
+          </ul>
         ))
       }
-    </ul>
+    </div>
   )
 }
 

@@ -20,7 +20,7 @@ const SliderOne = () => {
   return (
       <Slider {...settings}>
         <div>
-          <img ></img>
+          <img></img>
         </div>
         <div>
         <img></img>
