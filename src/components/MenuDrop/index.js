@@ -7,8 +7,8 @@ function MenuDrop(props) {
   return (
     <div className="menu-list-drop">
       {
-        data.map((item) => (
-          <ul>
+        data.map((item, index) => (
+          <ul key={index}>
           {item.map((items, index) => (
             <li key={index}>
               {items.title}

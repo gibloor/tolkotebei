@@ -92,14 +92,18 @@ function HeaderMenu() {
 
   const [activeMenu, setActiveMenu] = useState();
 
+  function repeatTest(repeat){
+    activeMenu == repeat ? setActiveMenu() : setActiveMenu(repeat)
+  }
+
   return (
-    <OutsideClick>
+    <OutsideClick setActiveMenu={setActiveMenu}>
       <div>
         <nav className="navHead">
           <ul className="menu-list">
             {
               headerMenu.map((item) => (
-                <li key={item.value} onClick={() => setActiveMenu(item.items)}>
+                <li key={item.value} onClick={() => repeatTest(item.items)}>
                   {item.title}
                 </li>
               ))
