@@ -2,11 +2,7 @@ a{
   text-decoration: none;
 }
 .allDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width:100%;
-  flex-direction: column;
 }
 .siteHead {
   background-color:#0a3470;
@@ -183,9 +179,15 @@ height:90%;
   padding: 10px;
   position: relative;
 }
+.blockVideoBoss{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 .blockVideo {
   display:flex;
   width:1350px;
+  overflow: hidden;
 }
 .verticalText {
 width:80px;
@@ -202,6 +204,7 @@ width:265px;
 }
 .sliderVideos {
 width: calc(100% - 345px);
+min-width: 1000px;
 }
 
 .blue {

@@ -6,7 +6,7 @@
 }
 .sliderVideos .slick-dots {
     bottom: 10px;
-    z-index:999999;
+    z-index:9999;
     color:blue;
 }
 .sliderVideos .slick-dots li.slick-active button:before,
